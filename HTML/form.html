@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formulario - RUST</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../CSS/reme.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="principal">
+        <img src="../img/log1.jpeg" alt="" class="log">
+        <h1 class="barraiz">RUST</h1>
+        <div class="barra">
+        <a href="../HTML/reme.html" class="botones">INICIO</a>
+        <a href="../HTML/inf.html" class="botones">INF</a>
+        <a href="../HTML/ar.html" class="botones">Armas</a>
+        <a href="../HTML/guia.html" class="botones">Guía</a>
+        <a href="../HTML/form.html" class="botones">Formulario</a>
+        </div>
+    </div>
+        <div class="seccion" id="formulario">
+
+        <div class="banner">
+            <div class="banner-texto">
+                <div class="portada-etiqueta">ENCUESTA</div>
+                <div class="banner-titulo">¿Jugarías Rust?</div>
+                <div class="banner-sub">Contesta unas preguntas rápidas</div>
+            </div>
+        </div>
+
+        <div class="contenido">
+
+            <div class="seccion-titulo">Tus datos</div>
+
+            <form class="formulario" id="formRust">
+
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label>¿Jugarías Rust?</label>
+                    <div class="opciones">
+                        <label class="opcion"><input type="radio" name="jugaria" value="si" required> Sí</label>
+                        <label class="opcion"><input type="radio" name="jugaria" value="no"> No</label>
+                        <label class="opcion"><input type="radio" name="jugaria" value="tal-vez"> Tal vez</label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="plataforma">¿En qué plataforma jugarías?</label>
+                    <select id="plataforma" name="plataforma">
+                        <option value="pc">PC</option>
+                        <option value="xbox">Xbox</option>
+                        <option value="ps">PlayStation</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>¿Con quién jugarías?</label>
+                    <div class="opciones">
+                        <label class="opcion"><input type="checkbox" name="con" value="solo"> Solo</label>
+                        <label class="opcion"><input type="checkbox" name="con" value="amigos"> Con amigos</label>
+                        <label class="opcion"><input type="checkbox" name="con" value="clan"> En un clan</label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="motivo">¿Por qué sí o por qué no?</label>
+                    <textarea id="motivo" name="motivo" rows="4" placeholder="Cuéntanos tu opinión"></textarea>
+                </div>
+
+                <button type="submit" class="boton-enviar">ENVIAR</button>
+                <div class="mensaje-ok" id="mensajeOk">¡Gracias por contestar! Tu respuesta fue enviada.</div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div class="pie">
+        <div class="pie-texto">Jesús Cerón Marín · Grupo 4DSM G-2</div>
+    </div>
+
+     <script src="../js/reme.js"></script>
+
+    </body>
+</html>
