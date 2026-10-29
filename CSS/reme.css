@@ -486,3 +486,29 @@ body {
     border-radius: 6px;
     color: #dddddd;
 }
+
+@media (max-width: 768px) {
+    body {
+        margin: 0 15px;
+    }
+
+    .principal {
+        flex-direction: column;
+    }
+
+    .barra {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .portada-titulo {
+        font-size: 48px;
+    }
+
+    .arma {
+        min-width: 0;
+        width: 100%;
+    }
+}
